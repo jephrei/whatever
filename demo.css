@@ -1,0 +1,36 @@
+.demo-title {
+    margin: 2em 0 0 0;
+}
+
+.demo-title span {
+    font-weight: 100;
+    color: lightgray;
+}
+.demo-sub-title {
+    margin: 0 0 4em 0;
+}
+
+h1.demo-header,
+h2.demo-header,
+h3.demo-header,
+h4.demo-header,
+h5.demo-header,
+h6.demo-header {
+    border-bottom: solid .1em;
+}
+
+.demo-grid .row {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #ddd;
+}
+
+.demo-grid .demo-col {
+    border: .15em solid black;
+    padding: .2em .4em;
+    background-color: white;
+}
+
+.demo-bg-gray {
+    background-color: #eee;
+}

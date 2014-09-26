@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>whatever.css</title>
+<link rel="stylesheet" type="text/css" href="normalize.min.css" media="all">
+<link rel="stylesheet" type="text/css" href="whatever.css" media="all">
+<link rel="stylesheet" type="text/css" href="demo.css" media="all">
+
+</head>
+
+<body>
+
+<div class="container">
+	<h1 class="demo-title">whatever<span>.css</span></h1>
+	<p class="demo-sub-title">an unassuming css base file to make whatever</p>
+
+
+	<h2 class="demo-header">Grid</h2>
+	<p>A simple grid. Use 1-8 columns, gutters or not, with column skipping and reversing.</p>
+	<div class="demo-grid">
+		<div class="row">
+			<div class="col span-1-3 demo-col mono">.span-1-3</div>
+			<div class="col span-2-3 demo-col mono">.span-2-3</div>
+		</div>
+		<div class="row reverse">
+			<div class="col span-1-3 demo-col mono">.span-1-3</div>
+			<div class="col span-2-3 demo-col mono">.span-2-3</div>
+		</div>
+		<div class="row">
+			<div class="col span-2-3 skip-1-3 demo-col mono">.span-2-3.skip-1-3</div>
+		</div>
+		<div class="row spaced">
+			<div class="col span-1-3"><div class="demo-col mono">.span-1-3</div></div>
+			<div class="col span-2-3"><div class="demo-col mono">.span-2-3</div></div>
+		</div>
+	</div>
+
+	<h2 class="demo-header">Text</h2>
+
+	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+	<h3>Lists</h3>
+	<ul>
+		<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+		<li>Aliquam tincidunt mauris eu risus.</li>
+		<li>Vestibulum auctor dapibus neque.</li>
+	</ul>
+
+	<ol>
+		<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+		<li>Aliquam tincidunt mauris eu risus.</li>
+		<li>Vestibulum auctor dapibus neque.</li>
+	</ol>
+
+	<h3>Blockquote</h3>
+	<blockquote>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		<cite>&ndash; John Doe (@jdoe) <a href="https://twitter.com/jdoe/statuses/9999999999999999">June 1st, 2014</a></cite>
+	</blockquote>
+
+	<h3>Definition lists</h3>
+	<dl>
+		<dt>Definition list</dt>
+			<dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
+		<dt>Lorem ipsum dolor sit amet</dt>
+			<dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
+	</dl>
+
+	<h3>Headers</h3>
+	<h1>Header 1</h1>
+	<h2>Header 2</h2>
+	<h3>Header 3</h3>
+	<h4>Header 4</h4>
+	<h5>Header 5</h5>
+	<h6>Header 6</h6>
+
+
+	<h2 class="demo-header">Form Elements</h2>
+	<h3>Buttons</h3>
+
+	<p>Button element</p>
+	<button>button</button>
+
+	<p>With <span class="mono">.btn</span> class</p>
+	<a class="btn">a.btn</a>
+	<div class="btn">div.btn</div>
+
+	<p>Input type</p>
+	<input type="button" value="button" />
+	<input type="submit" value="submit" />
+	<input type="reset" value="reset" />
+
+	<p>Diabled</p>
+	<button disabled>button</button>
+
+	<h3>Fieldset</h3>
+	<fieldset>
+		<legend>Legend</legend>
+		<p>fieldset content</p>
+	</fieldset>
+
+
+	<h2 class="demo-header">Major Elements</h2>
+	<h3>Tables</h3>
+
+	<table>
+		<caption>Table caption</caption>
+		<thead>
+			<tr>
+				<th>Table Header 1</th>
+				<th>Table Header 2</th>
+				<th>Table Header 3</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td colspan="3">Table footer</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td>Division 1</td>
+				<td>Division 2</td>
+				<td>Division 3</td>
+			</tr>
+			<tr>
+				<td>Division 1</td>
+				<td>Division 2</td>
+				<td>Division 3</td>
+			</tr>
+			<tr>
+				<td>Division 1</td>
+				<td>Division 2</td>
+				<td>Division 3</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>Navigation</h3>
+	<nav>
+		<ul>
+			<li><a href="#0">Lorem</a></li>
+			<li><a href="#0">Aliquam</a>
+				<ul>
+					<li><a href="#0">Lorem</a></li>
+					<li><a href="#0">Aliquam</a></li>
+					<li><a href="#0">Morbi</a>
+						<ul>
+							<li><a href="#0">Lorem</a></li>
+							<li><a href="#0">Aliquam</a></li>
+						</ul>
+					</li>
+					<li><a href="#0">Praesent</a></li>
+				</ul>
+			</li>
+			<li><a href="#0">Morbi</a></li>
+			<li><a href="#0">Praesent</a>
+				<ul>
+					<li><a href="#0">Lorem</a></li>
+					<li><a href="#0">Aliquam</a></li>
+				</ul>
+			</li>
+			<li><a href="#0">Pellentesque</a></li>
+		</ul>
+	</nav>
+
+	<h2 class="demo-header">Helper Classes</h2>
+	<table>
+		<thead>
+			<th>Class</th>
+			<th>Description</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="mono">.sans-serif</td>
+				<td>Sets text to a sans-serif font</td>
+			</tr>
+			<tr>
+				<td class="mono">.serif</td>
+				<td>Sets text to a serif font</td>
+			</tr>
+			<tr>
+				<td class="mono">.mono</td>
+				<td>Sets text to a monospace font</td>
+			</tr>
+			<tr>
+				<td class="mono">.chisel</td>
+				<td>Sets slightly rounded borders (3px)</td>
+			</tr>
+			<tr>
+				<td class="mono">.curve</td>
+				<td>Sets round borders (.4em)</td>
+			</tr>
+			<tr>
+				<td class="mono">.round</td>
+				<td>Sets very round borders (100em)</td>
+			</tr>
+			<tr>
+				<td class="mono">.text-left</td>
+				<td>Align text to the left</td>
+			</tr>
+			<tr>
+				<td class="mono">.text-center</td>
+				<td>Align text to the center</td>
+			</tr>
+			<tr>
+				<td class="mono">.text-center-stacked</td>
+				<td>Align text to the center in stacked (small screen) view</td>
+			</tr>
+			<tr>
+				<td class="mono">.text-right</td>
+				<td>Align text to the right</td>
+			</tr>
+			<tr>
+				<td class="mono">.full-width</td>
+				<td>Sets element to full width of containing element</td>
+			</tr>
+			<tr>
+				<td class="mono">.no-wrap</td>
+				<td>Prevents words from wrapping</td>
+			</tr>
+			<tr>
+				<td class="mono">.float-left</td>
+				<td>Floats elements left</td>
+			</tr>
+			<tr>
+				<td class="mono">.float-right</td>
+				<td>Floats elements right</td>
+			</tr>
+			<tr>
+				<td class="mono">.inline</td>
+				<td>Sets element display to <span class="mono">inline</span></td>
+			</tr>
+			<tr>
+				<td class="mono">.block</td>
+				<td>Sets element display to <span class="mono">block</span></td>
+			</tr>
+			<tr>
+				<td class="mono">.inline-block</td>
+				<td>Sets element display to <span class="mono">inline-block</span></td>
+			</tr>
+			<tr>
+				<td class="mono">.rem-top</td>
+				<td>Removes top margin of an element</td>
+			</tr>
+			<tr>
+				<td class="mono">.rem-bot</td>
+				<td>Removes bottom margin of an element</td>
+			</tr>
+			<tr>
+				<td class="mono">.text-pad</td>
+				<td>Adds a relative padding for displaying text (<span class="mono">.4em .8em</span>)</td>
+			</tr>
+			<tr>
+				<td class="mono">.scroll-horiz</td>
+				<td>A container box to create a horizontal scrollbar for it's child. <br />Useful for wide tables and code blocks.</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h4 class="mono">.scroll-horiz</h4>
+	<pre class="scroll-horiz demo-bg-gray"><code>&lt;ul>
+   &lt;li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.&lt;/li>
+   &lt;li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.&lt;/li>
+   &lt;li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.&lt;/li>
+   &lt;li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.&lt;/li>
+&lt;/ul></code></pre>
+
+
+</div>
+
+
+
+</body>
+
+</html>
