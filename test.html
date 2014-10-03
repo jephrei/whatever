@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>whatever.css</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" type="text/css" href="normalize.min.css" media="all">
+<link rel="stylesheet" type="text/css" href="whatever.css" media="all">
+
+<style>
+.i-b {
+    display: table;
+}
+
+.i-i {
+    display: table-cell;
+    vertical-align: baseline;
+}
+</style>
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+<figure>
+  <img src="http://placehold.it/200" alt="Kooaburra" />
+  <img src="http://placehold.it/200" alt="Pelican stood on the beach" />
+  <img src="http://placehold.it/200" alt="Cheeky looking Rainbow Lorikeet" />
+  <figcaption>Australian Birds. From left to right, Kookburra, Pelican and Rainbow Lorikeet. Originals by <a href="http://www.flickr.com/photos/jdoe/">John Doe</a></figcaption>
+</figure>
+
+<figure>
+	<blockquote><p><code>&lt;small&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"&gt;Creative Commons Attribution Share-alike license&lt;/a&gt;&lt;/small&gt;</code></p></blockquote>
+	<figcaption>Using <code>&lt;small&gt;</code> around a <a href="http://creativecommons.org/choose/" title="Choose a License">Creative Commons license</a> link with <code>rel="license"</code></figcaption>
+</figure>
+
+<details>
+  <summary>Show/Hide</summary>
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</details>
+
+
+    <input type="text" list="marsupials" placeholder="Start typing a word like 'Wombat'" />
+    <datalist id="marsupials">
+      <option value="Bilby" />
+      <option value="Koala" />
+      <option value="Numbat" />
+      <option value="Pig-footed bandicoot" />
+      <option value="Potoroo" />
+      <option value="Quoll" />
+      <option value="Wallaby" />
+      <option value="Wombat" />
+    </datalist>
+
+    <input type="range" value="0" min="0" max="100" list="numbers" />
+    <datalist id="numbers">
+      <option value="10" />
+      <option value="15" />
+      <option value="30" />
+      <option value="50" />
+      <option value="90" />
+    </datalist>
+
+    <input type="color" value="#000000" list="grays" />
+    <datalist id="grays">
+      <option>#eeeeee</option>
+      <option>#cccccc</option>
+      <option>#aaaaaa</option>
+      <option>#999999</option>
+      <option>#444444</option>
+    </datalist>
+
+<div class="i-b">
+    <div class="i-i">
+        <input id="chk1" type="checkbox" />
+    </div>
+    <div class="i-i">
+        <label for="chk1">Checkbox 1 text</label>
+    </div>
+</div>
+
+<div class="i-b">
+    <input class="i-i" id="chk2" type="checkbox" />
+    <label class="i-i" for="chk2">Checkbox 2 text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum assumenda veniam expedita veritatis dolor accusamus eligendi. Soluta ipsum et.</label>
+</div>
+
+
+</div>
+
+
+
+</body>
+
+</html>

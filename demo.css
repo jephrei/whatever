@@ -34,3 +34,16 @@ h6.demo-header {
 .demo-bg-gray {
     background-color: #eee;
 }
+
+.demo-section {
+    min-height: 100vh;
+    padding: 2em 0;
+}
+
+.demo-hero {
+        background-image:
+/*        -webkit-radial-gradient(40% 50%, circle, transparent, #a95ed8),
+        -webkit-radial-gradient(20% 20%, 40vw 80vh, #80ebff, transparent);*/
+        radial-gradient(circle farthest-side, transparent, #a95ed8),
+        radial-gradient(circle farthest-side, #80ebff, transparent);
+}
