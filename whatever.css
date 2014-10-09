@@ -3,36 +3,35 @@ whatever.css
 */
 
 html {
-	font: 100 16px/1.5 sans-serif;
-	/*-webkit-text-size-adjust: none;*/
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	font: 100 16px/1.5 sans-serif; /* better default font */
+	box-sizing: border-box; /* border box sizing */
 }
 
 *, *:before, *:after {
-	-moz-box-sizing: inherit;
-	box-sizing: inherit;
+	box-sizing: inherit; /* inherit box sizing */
 }
 
-body { margin: 0; }
+body { margin: 0; /* remove body margin */ }
 
-a img { border: none; }
+a img {
+	border: none; /* removes border on older browsers */
+	vertical-align: middle; /* vertically centers images in links */
+}
 
 img,
 svg,
 video,
 audio,
-canvas { max-width: 100%; }
+canvas,
+input { max-width: 100%; /* keep elements in container */ }
 
-ul { padding-left: 1em; }
-ol { padding-left: 1.3em; }
+ul { padding-left: 1em; /* bullets flush left */ }
+ol { padding-left: 1.3em; /* bullets flush left */ }
 
 abbr[title],
-acronym[title] {
-	border-bottom: 1px dotted;
-}
+acronym[title] { border-bottom: .1em dotted; /* add abbreviation style */ }
 
-hr {
+hr { /* basic hr style */
 	height: .1em;
 	border: none;
 	color: #000;
@@ -40,46 +39,65 @@ hr {
 }
 
 table {
-	table-layout: fixed;
-	margin: 1em 0;
+	table-layout: fixed; /* a more reliable table */
+	border-collapse: collapse; /* keep it tight */
+	margin: 1em 0; /* typical element margins */
 }
 th,
-td {
+td { /* basic table style */
 	padding: .25em .5em;
 	border: solid .1em #c0c0c0;
 }
 
 input {
-	max-width: 100%;
+	font-size: inherit; /* fixes some inputs not resizing */
 }
 input[type='button'] {
 	-webkit-appearance: none;
 }
-
-input,
-optgroup,
-select,
-textarea,
-input[type="file"]::-webkit-file-upload-button {
-	border: solid .1em #c0c0c0;
+input[type='range'] {
+	margin: 0; /* remove side margins */
 }
 
-/* Buttons */
+textarea {
+	font: inherit; /* remove monospace styling */
+	max-width: 100%; /* prevent from resizing past container */
+}
+
+select { font-size: inherit; /* fixes select not resizing */ }
+
+iframe { border: 0; /* remove border */ }
+
+fieldset {
+	border-width: .1em; /* font relative border width */
+	margin: 1em 0;
+}
+
+legend { padding: 0; /* aligns legend with fieldset content */ }
+
+figure { margin: 1em 0; /* typical element margins */ }
+
+small { line-height: 1; }
+
+dd { margin-left: 2.5em; /* font relative margin */ }
+
 button,
 .btn,
 input[type='button'],
 input[type='submit'],
-input[type='reset'] {
+input[type='reset'] { /* basic button style */
+	font-size: inherit;
+	font-weight: normal;
+    line-height: 1.2;
 	display: inline-block;
 	margin-bottom: .25em;
     padding: .5em 1em;
     border: none;
+	color: inherit;
     background-color: #ddd;
     vertical-align: middle;
     text-align: center;
     text-decoration: none;
-    font-weight: normal;
-    line-height: 1.2;
     cursor: pointer;
 }
 .btn:visited {
@@ -90,7 +108,7 @@ button:hover,
 .btn:hover,
 input[type='button']:hover,
 input[type='submit']:hover,
-input[type='reset']:hover {
+input[type='reset']:hover { /* basic hover button style */
     background-color: #eee;
 	text-decoration: none;
 }
@@ -99,7 +117,7 @@ button:not([disabled]):active,
 .btn:not([disabled]):active,
 input[type='button']:not([disabled]):active,
 input[type='submit']:not([disabled]):active,
-input[type='reset']:not([disabled]):active {
+input[type='reset']:not([disabled]):active { /* basic active button style */
 	outline: none;
 }
 
@@ -107,32 +125,21 @@ button[disabled],
 .btn[disabled],
 input[type='button'][disabled],
 input[type='submit'][disabled],
-input[type='reset'][disabled] {
+input[type='reset'][disabled] { /* basic diasbled button style */
     background-color: #eee;
     color: #bbb;
     text-shadow: none;
     cursor: not-allowed;
 }
 
-textarea { max-width: 100%; }
-
-fieldset {
-	border-width: .1em;
-	margin: 1em 0;
-}
-
-figure { margin: 1em 0; }
-
-small { line-height: 1; }
-
-nav > ul {
+nav > ul { /* basic nav ul styles */
     margin: 0;
     padding-left: 0;
     list-style-type: none;
 	font-weight: normal;
 }
 
-nav a:not([href]) { cursor: default; }
+nav a:not([href]) { cursor: default; /* remove pointer on nav links with no destination */ }
 
 .sans-serif { font-family: sans-serif; }
 .serif { font-family: serif; }
