@@ -5,37 +5,33 @@
 <title>whatever.css</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<link rel="stylesheet" type="text/css" href="normalize.min.css" media="all">
-<link rel="stylesheet" type="text/css" href="whatever.css" media="all">
-<link rel="stylesheet" type="text/css" href="demo.css" media="all">
-
+<link rel="stylesheet" type="text/css" href="whatever.css" media="all" />
+<link rel="stylesheet" type="text/css" href="demo.css" media="all" />
 </head>
 
 <body>
 
 <div class="container">
-
 	<h1 class="demo-title">whatever<span>.css</span></h1>
-	<p class="demo-sub-title">an unassuming css base file to make whatever</p>
+	<p class="demo-sub-title">an unassuming css base that adheres to best practices and better defaults with a little framework love to top it off.</p>
 
 	<h2 class="demo-header">Grid</h2>
 	<p>A simple grid. Use 1-8 columns, gutters or not, with column skipping and reversing, and column stacking in mobile or not.</p>
 	<div class="demo-grid">
 		<div class="row">
-			<div class="col span-1-3 demo-col mono">.span-1-3</div>
-			<div class="col span-2-3 demo-col mono">.span-2-3</div>
+			<div class="col span-1-3 mono demo-col">.span-1-3</div>
+			<div class="col span-2-3 mono demo-col">.span-2-3</div>
 		</div>
 		<div class="row reverse">
-			<div class="col span-1-3 demo-col mono">.span-1-3</div>
-			<div class="col span-2-3 demo-col mono">.span-2-3</div>
+			<div class="col span-1-3 mono demo-col">.span-1-3</div>
+			<div class="col span-2-3 mono demo-col">.span-2-3</div>
 		</div>
 		<div class="row">
-			<div class="col span-2-3 skip-1-3 demo-col mono">.span-2-3.skip-1-3</div>
+			<div class="col span-2-3 skip-1-3 mono demo-col">.span-2-3.skip-1-3</div>
 		</div>
 		<div class="row spaced">
-			<div class="col span-1-3"><div class="demo-col mono">.span-1-3</div></div>
-			<div class="col span-2-3"><div class="demo-col mono">.span-2-3</div></div>
+			<div class="col span-1-3"><div class="mono demo-col">.span-1-3</div></div>
+			<div class="col span-2-3"><div class="mono demo-col">.span-2-3</div></div>
 		</div>
 	</div>
 
@@ -85,16 +81,29 @@
 	<button>button</button>
 
 	<p>With <span class="mono">.btn</span> class</p>
-	<a class="btn">a.btn</a>
-	<div class="btn">div.btn</div>
+	<a class="btn" href="#0">a.btn</a>
+	<div class="btn" tabindex="0">div.btn</div>
 
-	<p>Input type</p>
-	<input type="button" value="button" />
-	<input type="submit" value="submit" />
-	<input type="reset" value="reset" />
+	<p>Inputs with <span class="mono">.btn</span> class</p>
+	<input type="button" class="btn" value="button" />
+	<input type="submit" class="btn" value="submit" />
+	<input type="reset" class="btn" value="reset" />
 
 	<p>Diabled</p>
 	<button disabled>button</button>
+
+	<p>With stuff inside</p>
+	<button><img src="http://placekitten.com/g/64/64" /> Image</button>
+	<button>Lorem Ipsum &raquo;</button>
+
+	<p>Using helper classes</p>
+	<button class="xl">.xl button</button>
+	<button class="lg">.lg button</button>
+	<button class="sm">.sm button</button>
+	<button class="full-width">.full-width button</button>
+	<button class="chisel">.chisel button</button>
+	<button class="curve">.curve button</button>
+	<button class="round">.round button</button>
 
 	<h3>Fieldset</h3>
 	<fieldset>
@@ -187,6 +196,18 @@
 				<td>Sets text to a monospace font</td>
 			</tr>
 			<tr>
+				<td class="mono">.sm</td>
+				<td>Sets element to small size (.8em)</td>
+			</tr>
+			<tr>
+				<td class="mono">.lg</td>
+				<td>Sets element to large size (1.6em)</td>
+			</tr>
+			<tr>
+				<td class="mono">.xl</td>
+				<td>Sets element to extra large size (2.4em)</td>
+			</tr>
+			<tr>
 				<td class="mono">.chisel</td>
 				<td>Sets slightly rounded borders (3px)</td>
 			</tr>
@@ -203,6 +224,10 @@
 				<td>Align text to the left</td>
 			</tr>
 			<tr>
+				<td class="mono">.text-left-stacked</td>
+				<td>Align text to the left in stacked (small screen) view</td>
+			</tr>
+			<tr>
 				<td class="mono">.text-center</td>
 				<td>Align text to the center</td>
 			</tr>
@@ -215,12 +240,16 @@
 				<td>Align text to the right</td>
 			</tr>
 			<tr>
+				<td class="mono">.text-right-stacked</td>
+				<td>Align text to the right in stacked (small screen) view</td>
+			</tr>
+			<tr>
 				<td class="mono">.full-width</td>
 				<td>Sets element to full width of containing element</td>
 			</tr>
 			<tr>
 				<td class="mono">.no-wrap</td>
-				<td>Prevents words from wrapping</td>
+				<td>Prevents text from wrapping<br />useful for calls to action like '<strong>Read more &raquo;</strong>'</td>
 			</tr>
 			<tr>
 				<td class="mono">.float-left</td>
@@ -229,18 +258,6 @@
 			<tr>
 				<td class="mono">.float-right</td>
 				<td>Floats elements right</td>
-			</tr>
-			<tr>
-				<td class="mono">.inline</td>
-				<td>Sets element display to <span class="mono">inline</span></td>
-			</tr>
-			<tr>
-				<td class="mono">.block</td>
-				<td>Sets element display to <span class="mono">block</span></td>
-			</tr>
-			<tr>
-				<td class="mono">.inline-block</td>
-				<td>Sets element display to <span class="mono">inline-block</span></td>
 			</tr>
 			<tr>
 				<td class="mono">.rem-top</td>
@@ -257,6 +274,22 @@
 			<tr>
 				<td class="mono">.scroll-horiz</td>
 				<td>A container box to create a horizontal scrollbar for it's child. <br />Useful for wide tables and code blocks.</td>
+			</tr>
+			<tr>
+				<td class="mono">.input-block</td>
+				<td>Container for some form elements (<code>.input-item</code>) <br />Useful to align labels with their checkboxes, radio buttons, etc.</td>
+			</tr>
+			<tr>
+				<td class="mono">.input-item</td>
+				<td>A class to be applied to labels and inputs inside the <code>.input-block</code> containter</td>
+			</tr>
+			<tr>
+				<td class="mono">.show-stacked</td>
+				<td>Shows element in stacked view and hides in everything else</td>
+			</tr>
+			<tr>
+				<td class="mono">.hide-stacked</td>
+				<td>Hides element in stacked view and shows in everything else</td>
 			</tr>
 		</tbody>
 	</table>
