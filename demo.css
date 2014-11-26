@@ -1,13 +1,10 @@
 .demo-title {
-    margin: 2em 0 0 0;
+    padding: 6em 0;
 }
 
-.demo-title span {
+.demo-title h1 span {
     font-weight: 100;
     color: lightgray;
-}
-.demo-sub-title {
-    margin: 0 0 4em 0;
 }
 
 h1.demo-header,
@@ -35,15 +32,4 @@ h6.demo-header {
     background-color: #eee;
 }
 
-.demo-section {
-    min-height: 100vh;
-    padding: 2em 0;
-}
-
-.demo-hero {
-        background-image:
-/*        -webkit-radial-gradient(40% 50%, circle, transparent, #a95ed8),
-        -webkit-radial-gradient(20% 20%, 40vw 80vh, #80ebff, transparent);*/
-        radial-gradient(circle farthest-side, transparent, #a95ed8),
-        radial-gradient(circle farthest-side, #80ebff, transparent);
-}
+.demo-mono { font-family: monospace; }
